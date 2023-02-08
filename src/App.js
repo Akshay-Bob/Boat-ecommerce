@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -21,6 +22,14 @@ import Signup from './Components/Signup';
 import Login from './Components/Login';
 
 function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:8000/message")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
