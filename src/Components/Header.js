@@ -10,10 +10,13 @@ import BoatLogo from '../assests/boat_logo_small.png';
 import SearchComponent from "./SearchComponent";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { Container } from "react-bootstrap";
 
 
 function Header() {
-  return <header className="main-header">
+  return (
+  <Container>
+  <header className="main-header">
     <div className="header-content">
       <div className="left">
         <Link to='/'><img src={BoatLogo}/></Link>
@@ -41,7 +44,7 @@ function Header() {
         {/* <li><Link to='/signup'><AiOutlineUserAdd/></Link></li> */}
       </div>
     </div>
-  </header>
+  </header></Container>);
 }
 
 export default Header;
