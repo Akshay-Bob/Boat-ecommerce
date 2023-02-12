@@ -8,7 +8,6 @@ import Shopcomponenet from "./Shopcomponent/ShopComponent";
 function Home() {
     return (<>
       <Banner/>
-      {/* <Shopcomponenet/> */}
       <Newsletter/>
       <Fotter/>
     </>
