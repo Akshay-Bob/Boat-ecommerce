@@ -1,80 +1,91 @@
 @import "../../../css-config/mixins.scss";
 
-.newletter-section{
+.newletter-section {
     width: 100%;
     height: 400px;
     display: flex;
-    align-items:center;
-    background:#f9f9f9;
+    align-items: center;
+    background: #f9f9f9;
     background-position: center;
-    background-repeat: no-repeat;;
-        .newsletter-content{
-                width: fit-content;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .small-text{
-                margin-bottom: 15px;
-                text-transform: uppercase;
-                color: rgba(0, 0, 0, 0.5);
-            }
-            .big-text{
-                margin-bottom: 20px;
-                font-size: 22px;
-                line-height: 20px;
-                font-weight: 500;
-                text-transform: uppercase;
-                padding: 0 30px;
-                
-            }
-            .form{
-                display: flex;
-                gap: 5px;
-                margin-bottom: 10px;
-                input{
-                    width:200px;
-                    height: 40px;
-                    border-radius: 0;
-                    border: 1px solid rgba(0, 0, 0, 0.5);
-                    padding: 0 12px;
-                    font-size: 16px;
-                    outline: 0;
+    background-repeat: no-repeat;
+    ;
 
-                }
-                button{
-                    outline: 0;
-                    border: 0;
-                    height: 40px;
-                    width: 100px;
-                    display: flex;
-                    align-items: center;
-                    cursor: pointer;
-                    font-size: 16px;
-                    color: #fff;
-                background-color: #8e2de2; 
-                border-bottom:3px solid #8e2de2; 
-                text-align: center;                  
-                }
-            }
-            .text{
-                margin-bottom: 20px;
-                font-size: 14px;
-                color: rgba(0, 0, 0, 0.5);
-            }
-            .social-icons{
-                display: flex;
-                gap: 10px;
-            }
-            .icon{
-                width: 30px;
-                height: 30px;
-                background-color: rgba(0, 0, 0, 0.8);
-                border-radius: 50%;
-                color: #fff;
-                align-items: center;
-                justify-content: center;
-            }
+    .newsletter-content {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .small-text {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .big-text {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0 30px;
+
+    }
+
+    .form {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+
+        input {
+            width: 200px;
+            height: 40px;
+            border-radius: 0;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 0 12px;
+            font-size: 16px;
+            outline: 0;
+
+        }
+
+        button {
+            outline: 0;
+            border: 0;
+            height: 40px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: #fff;
+            background-color: #8e2de2;
+            border-bottom: 3px solid #8e2de2;
+            text-align: center;
+            padding: 0 15px;
+        }
+    }
+
+    .text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
 }

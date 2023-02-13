@@ -1,0 +1,17 @@
+@import '../../css-config/mixins.scss';
+
+.shop-by-category{
+    margin: 25px 0;
+    @include for-tablet-portrait-up{
+        margin: 50px 0;
+    }
+    .categories{
+        display: flex;
+        flex-flow: wrap;
+        gap: 10px;
+        .category{
+            background-color: #000;
+            width: calc(50% - 5px);
+        }
+    }
+}

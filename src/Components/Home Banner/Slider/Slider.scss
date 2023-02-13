@@ -2,8 +2,10 @@
 
 .slider-carousel{
     border-radius: 20px;
-    
-     .slider-wrapper{
-      //   border-radius: 5px;
-     }
+
+    .carousel{
+        .thumbs{
+        display: none;
+        }
+    }
 }
