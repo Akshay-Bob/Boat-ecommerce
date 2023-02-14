@@ -1,10 +1,11 @@
 @import '../css-config/mixins.scss';
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
-.main-header{
+.main-header {
     width: 100%;
     // padding: 0 20px;
     background-color: #ffffff;
@@ -12,42 +13,44 @@ body{
     // border-bottom: 1px solid rgba($color: #000000, $alpha: 1.0);
     z-index: 99;
 
-    .header-content{
+    .header-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 50px;
         margin: 0 auto;
         max-width: 1350px;
-        @include for-tablet-portrait-up{
+
+        @include for-tablet-portrait-up {
             height: 80px;
             padding: 0 40px 0 0;
         }
-        @include for-phone-only{
+
+        @include for-phone-only {
             padding: 0 20px;
         }
-        
-        .left{
-            img{
+
+        .left {
+            img {
                 max-width: 60px;
             }
         }
 
-        .center{
-            ul{
+        .center {
+            ul {
                 list-style-type: none;
                 display: flex;
                 gap: 25px;
                 align-items: center;
                 margin-bottom: 0;
-                
-                li{
+
+                li {
                     font-size: 17px;
                     font-weight: 600;
                     text-transform: uppercase;
                     cursor: pointer;
-                    
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: #000000;
                         font-size: 17px;
@@ -56,46 +59,54 @@ body{
                         font-family: 'Poppins', sans-serif;
                     }
                 }
-                @include for-phone-only{
+
+                @include for-phone-only {
                     display: none;
                 }
             }
-            .mobile-menu{
+
+            .mobile-menu {
                 font-size: 22px;
-                @include for-desktop-up{
+
+                @include for-desktop-up {
                     display: none;
                 }
-                @include for-big-desktop-up{
+
+                @include for-big-desktop-up {
                     display: none;
                 }
-                @include for-phone-only{
+
+                @include for-phone-only {
                     display: block;
                     margin-right: 60px;
                 }
-                @include for-tablet-portrait-up{
+
+                @include for-tablet-portrait-up {
                     display: block;
                 }
-                @include for-tablet-landscape-up{
-                     display: none;   
+
+                @include for-tablet-landscape-up {
+                    display: none;
                 }
             }
         }
 
-        .right{
+        .right {
             display: flex;
             align-items: center;
             gap: 20px;
-            
-            svg{
+
+            svg {
                 font-size: 20px;
                 cursor: pointer;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
             }
-            .cart-icon{
+
+            .cart-icon {
                 position: relative;
-                
-                span{
+
+                span {
                     min-width: 20px;
                     text-align: center;
                     background-color: #8e2de2;
@@ -109,12 +120,88 @@ body{
                 }
             }
 
-            li{
+            li {
                 list-style: none;
-                
-                a{
-                color: #000000;
-                text-decoration: none;
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.mob-header {
+    background-color: #fff;
+    height: 100vh;
+    width: 300px;
+    padding: 20px;
+    z-index: 99;
+    position: fixed;
+    display: none;
+
+    .mob-content {
+        .center {
+            ul {
+                list-style-type: none;
+                gap: 25px;
+                align-items: center;
+                margin-bottom: 20px;
+
+                li {
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                        font-size: 17px;
+                        font-weight: 600;
+                        line-height: 23px;
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            align-items: right;
+            gap: 20px;
+
+
+            svg {
+                font-size: 20px;
+                cursor: pointer;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+
+            .cart-icon {
+                position: relative;
+
+                span {
+                    min-width: 20px;
+                    text-align: center;
+                    background-color: #8e2de2;
+                    padding: 2.5px;
+                    position: absolute;
+                    top: -5px;
+                    right: -12px;
+                    font-size: 12px;
+                    line-height: 1;
+                    border-radius: 10px;
+                }
+            }
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #000000;
+                    text-decoration: none;
                 }
             }
         }
