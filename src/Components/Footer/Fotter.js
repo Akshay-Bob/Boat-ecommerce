@@ -7,41 +7,41 @@ const Fotter = () => {
         <div className='footer'>
             <div className='footer-content'>
                 <div className='col'>
-                    <div className='title'>
+                    <h5 className='title'>
                         About
-                    </div>
-                    <div className='text'>
+                    </h5>
+                    <p className='text'>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-                    </div>
+                    </p>
                 </div>
                 <div className='col'>
-                    <div className='title'>
+                    <h5 className='title'>
                         Contact
-                    </div>
+                    </h5>
                     <div className='c-item'>
                         <FaLocationArrow />
-                        <div className='text'>
+                        <p className='text'>
                             Gaondevi, Indira Nagar Vakola Pipe Line, Santacruz (East)
                             Mumbai No.: 400055.
-                        </div>
+                        </p>
                     </div>
                     <div className='c-item'>
                         <FaMobileAlt />
-                        <div className='text'>
+                        <p className='text'>
                             Phone: e+91-8898670078
-                        </div>
+                        </p>
                     </div>
                     <div className='c-item'>
                         <FaEnvelope />
-                        <div className='text'>
+                        <p className='text'>
                             Email: asb2041999@gmail.com
-                        </div>
+                        </p>
                     </div>
                 </div>
                 <div className='col'>
-                    <div className='title'>
+                    <h5 className='title'>
                         Categaories
-                    </div>
+                    </h5>
                     <span className='text'>Headphone</span>
                     <span className='text'>Smart Watches</span>
                     <span className='text'> Blutooth Speakers </span>
@@ -51,9 +51,9 @@ const Fotter = () => {
                 </div>
 
                 <div className='col'>
-                    <div className='title'>
+                    <h5 className='title'>
                         Pages
-                    </div>
+                    </h5>
                     <span className='text'>Home</span>
                     <span className='text'>about</span>
                     <span className='text'> Privacy Policy </span>
@@ -64,9 +64,9 @@ const Fotter = () => {
             </div>
             <div className='bottom-bar'>
                     <div className='bottom-bar-content'>
-                        <div className='text'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </div>
+                        <p className='text'>
+                        Copyright 2023 @ Akshay Bobahte, All rights reserved.
+                        </p>
                     <img src={Payments} className='payment-img'/>
                     </div>
             </div>

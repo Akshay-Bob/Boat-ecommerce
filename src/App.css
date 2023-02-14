@@ -1,6 +1,17 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 23px;
+}
+span{
+  font-family: 'Poppins', sans-serif;
+}
 .App {
   text-align: center;
 }

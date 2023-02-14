@@ -4,6 +4,9 @@ import { Carousel } from 'react-responsive-carousel';
 import slide1 from '../../../assests/slide1.jpg';
 import slide2 from '../../../assests/slide2.jpg';
 import slide3 from '../../../assests/slide3.jpg';
+// import slide1 from '../../../assests/bannerimg1.jpg';
+// import slide2 from '../../../assests/bannerimg2.jpg';
+
 import './Slider.scss';
 
 
