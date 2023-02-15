@@ -1,5 +1,5 @@
 import React from "react";
-import Categories from "./Category/Categories";
+import Categories from "./Home Banner/Category/Categories";
 import Fotter from "./Footer/Fotter";
 import Newsletter from "./Footer/Newsletter/Newsletter";
 import Banner from "./Home Banner/Banner";
@@ -8,8 +8,8 @@ import './Home.scss';
 
 function Home() { 
     return (<>
-      <Banner/>
       <div className='main-content'>
+      <Banner/>
         <div className="layout">
           <Categories/>
           <Products/>

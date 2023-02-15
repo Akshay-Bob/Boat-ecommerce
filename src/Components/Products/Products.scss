@@ -29,7 +29,8 @@
     }
     .products{
         display: flex;
-        flex-flow: wrap;
+        flex-flow: nowrap;
+        overflow-x: scroll;
         gap:10px;
         @include for-tablet-portrait-up{
             gap: 20px;
