@@ -2,10 +2,10 @@ import React from 'react';
 import Product from './Product/Product';
 import './Products.scss';
 
-function Products() {
+function Products( {innerPage} ) {
   return (
     <div className='products-container'>
-        <div className='sec-heading'>Popular Products</div>
+        {!innerPage && <div className='sec-heading'>Popular Products</div>}
         <div className='products'>
         <Product/>
         <Product/>

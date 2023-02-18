@@ -28,7 +28,8 @@
         
     }
     .products{
-        display: flex;
+        grid-auto-flow: column;
+        display: grid;
         flex-flow: nowrap;
         overflow-x: scroll;
         gap:10px;

@@ -1,4 +1,4 @@
-import React from 'react';
+    import React from 'react';
 import './Fotter.scss';
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from 'react-icons/fa';
 import Payments from '../../assests/payments.png';

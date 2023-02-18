@@ -1,7 +1,10 @@
 import React from "react";
+import Categry from "./Categories/Categories";
 
 function Category() {
-    return <h1>Hello, Category</h1>;
+    return <>
+    <Categry />
+    </>
   }
 
 export default Category;

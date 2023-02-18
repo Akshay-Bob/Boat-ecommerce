@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { Button, Col, Container, Form } from "react-bootstrap";
 import './Login.scss';
 import { SiFacebook } from 'react-icons/si';
@@ -8,21 +8,22 @@ import { Link } from 'react-router-dom';
 
 function Login() {
 
-    const [ user, setUser ] = useState({
-        email: '',
-        password:''
+    const [user, setUser] = useState({
+        email:"",
+        password:""
+    });
+
+  function handleChange(e){
+    const {email, value} = e.target
+    setUser({
+        ...user,
+        [email]:value
     })
 
-    function userInfo(e){
-        const { name, value } = e.target;
-        setUser({
-            ...user,
-            [name]:value
-        })
-    } 
+  }
+
     return (
         <Container className="login-form">
-            {console.log("User", user)}
             <div className="page-header">
                 <h1>Login</h1>
                 <p>Please enter your e-mail and password:</p>
@@ -34,8 +35,8 @@ function Login() {
  
             <div className="page-form">
                 <Form>
-                    <input type="email" name="email" value={user.email} placeholder="Email" onChange={ userInfo }></input>
-                    <input type="password" name="password"value={user.password}  placeholder="Password" onChange={ userInfo }></input>
+                    <input type="email" name="email" value={user.email} placeholder="Email" onChange={handleChange}></input>
+                    <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Password" ></input>
                     <Button className="loginBtn">Login</Button>
                     <ul>
                         <li>New Customer?</li>

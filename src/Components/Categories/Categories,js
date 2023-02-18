@@ -1,7 +1,0 @@
-import React from "react";
-import './Categories.scss';
-
-const Categry =()=>{
-    return
-}
-export default Categry;

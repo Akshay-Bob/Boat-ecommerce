@@ -1,7 +1,11 @@
-import React from "react";
+import React from 'react';
 
-function Newsletter() {
-    return <h1>Hello, Newsletter</h1>;
-  }
+const Newsletter = () => {
+    return (
+        <div>
+            <Newsletter />
+        </div>
+    );
+}
 
 export default Newsletter;

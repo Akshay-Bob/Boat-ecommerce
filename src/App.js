@@ -13,7 +13,7 @@ import Category from './Components/Category';
 import SingleProduct from './Components/SingleProduct';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Newsletter from './Components/Newsletter';
+import Newsletter from '../src/Components/Newsletter';
 import Context from './Utils/Context'; 
 import AppContext from './Utils/Context';
 import About from './Components/About';
